@@ -1,0 +1,11 @@
+-- Run specs under LuaJIT so tests see the same Lua the game does.
+return {
+    _all = {
+        lua = "luajit",
+    },
+    default = {
+        ROOT = { "spec" },
+        pattern = "_spec",
+        verbose = true,
+    },
+}

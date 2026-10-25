@@ -1,0 +1,20 @@
+# makelove output
+build/
+*.love
+
+# coverage
+luacov.stats.out
+luacov.report.out
+
+# local luarocks trees
+.luarocks/
+lua_modules/
+
+# editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
