@@ -1,6 +1,5 @@
 local Manager = require("src.scenes.manager")
 local Screen = require("src.render.screen")
-local Input = require("src.input.input")
 
 local Match = {}
 
@@ -8,21 +7,12 @@ local ticks
 local enter
 
 function Match.enter()
-    print("welcome to the match hello world")
     ticks = 0
     enter = false
 end
 
-function Match.tick(frames)
+function Match.tick()
     ticks = ticks + 1
-    -- Debug: one line per press, so holding a key should print exactly once.
-    for slot, frame in ipairs(frames) do
-        for _, a in ipairs(Input.ACTIONS) do
-            if frame[a .. "_pressed"] then
-                print("slot " .. slot .. ": " .. a .. " pressed")
-            end
-        end
-    end
 end
 
 function Match.draw()
