@@ -14,6 +14,7 @@ lua_modules/
 .vscode/
 .idea/
 *.swp
+Session.vim
 .DS_Store
 
 # Claude Code local settings

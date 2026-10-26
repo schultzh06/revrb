@@ -22,10 +22,10 @@ local function apply_pending()
     end
 end
 
-function Manager.tick()
+function Manager.tick(frames)
     apply_pending()
     if current and current.tick then
-        current.tick()
+        current.tick(frames)
     end
 end
 
